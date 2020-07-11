@@ -1,2 +1,1 @@
-# PROJECT8-WEB
-Django Web Project PROJECT8
+# PROJECT8
