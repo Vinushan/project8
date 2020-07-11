@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PROJECT 8</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href={% static "css/styles.css" %}>
+    <link rel="stylesheet" type="text/css" href={% static "css/cards.css" %}>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-2 logo-area">
+            <img class="logo" src={% static "images/logo.png" %}>
+            <img class="flag" src={% static "images/sri-lanka-flag.png" %}>
+        </div>
+        <div class="col-sm-8 top-bar">
+            <input class="search-bar" type="text" placeholder="Search..">
+            
+        </div>
+        <div class="col-sm-2 account-area">
+            create account
+        </div>
+    </div>
+    <div class="col-sm-2 sidebar full-height">
+        <h4>Choosing from...</h4>
+    </div>
+    <div class="col-sm-10">
+        {% block home %}{% endblock %}
+    </div>
+    
+</body>
+
+</html>
