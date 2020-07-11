@@ -1,2 +1,2 @@
-# a2z-web
-Django Web Project a2z
+# PROJECT8-WEB
+Django Web Project PROJECT8
