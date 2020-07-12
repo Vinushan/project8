@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+{% load staticfiles %}
+
+<div class="row">
+    <div class="col-sm-2 logo-area">
+        <a href="/home/"><img class="logo" src={% static "images/logo.png" %}></a>
+    </div>
+    <div class="col-sm-6 top-bar">
+        <h4>Hi, Kanissma Selvaraj</h4>
+    </div> 
+    <div class="col-sm-2 top-bar">
+        <select class="dropdown" style="width: max-content;" name="location" id="location">
+            <option value="sl-cmb">Colombo</option>
+        </select>
+    </div>       
+    <div class="col-sm-2 account-area">
+        <a href="/seller/logout/">Logout</a>
+    </div>
+</div>
+
+{% endblock %}

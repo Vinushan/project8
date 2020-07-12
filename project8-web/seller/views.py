@@ -7,14 +7,14 @@ import home.urls
 def login(request):
     return render(request, 'seller/login.html')
 
-def logout(request):
-    return home.views.landing(request)
 
 def create(request):
     return render(request, 'seller/create.html') 
 
-def seller_home(request, seller_id):
-    return HttpResponse(status=200)
 
-def add_product(request, seller_id):
+def seller_home(request, username):
+    return render(request, 'seller/home.html')
+
+
+def add_product(request, username):
     return HttpResponse(status=200)

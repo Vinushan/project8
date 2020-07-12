@@ -19,24 +19,29 @@
 <div class="row">
     <div class="col-sm-3"></div>
     <div class="col-sm-6">
-        <div class="login-card" style="height: 40rem;">
+        <div class="login-card" style="height: fit-content;">
             <div class="row">
                 <h3>Welcome Back..</h3>
-                <form action="">
-                    <input type="text" class="login-input" placeholder="Email" required>
-                    <input type="password" class="login-input" placeholder="Password" required>
+                <form id="seller-login" action="/seller/login/validate" method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="username" class="login-input" 
+                    placeholder="Username" required>
+                    <input type="password" name="password" class="login-input" 
+                    placeholder="Password" required>
                     <br>
                     <br>
                     <div class="row">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-3">
-                            <button type="submit" class="custom-button" style="background-color: rgb(200, 252, 200);">
+                            <button type="submit" class="custom-button" 
+                            style="background-color: rgb(200, 252, 200);">
                                 Login
                             </button>
                         </div>
                         <div class="col-sm-2"></div>
                         <div class="col-sm-3">
-                            <button type="reset" class="custom-button" style="background-color: rgb(245, 186, 186);">
+                            <button type="reset" class="custom-button" 
+                            style="background-color: rgb(245, 186, 186);">
                                 Reset
                             </button>
                         </div>
@@ -46,11 +51,6 @@
                 <br>
                 <br>
                 <div class="row">
-                    <!-- <a href="/seller/create/">
-                        <button class="custom-button" style="background-color: rgb(181, 181, 245);">
-                            Create New Account
-                        </button>
-                    </a> -->
                     <div class="col-sm-5" style="text-align: center;">
                         <a href="/home/">Get Back Home</a>
                     </div>
