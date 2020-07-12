@@ -1,0 +1,47 @@
+{% extends 'home/landing.html' %}
+
+{% block home %}
+
+{% load staticfiles %}
+<div class="row">
+
+  <div class="column">
+    <div class="card">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="product-image" src={% static "images/sample.png" %}>
+        </div>
+        <div class="col-sm-6">
+          <h4 class="row">Product Name</h4>
+          <br>
+          <div class="row card-detail">Category: Sample</div>
+          <div class="row card-detail">Seller: Vinushan</div>
+          <div class="row card-detail">Location: Wellawatte</div>
+          <div class="row card-detail">Price: Rs 100.00</div>
+          <div class="row card-detail">Condition: Brand New</div>
+          <div class="row card-detail">Posted on: 08/03/2020</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src={% static "images/sample.png" %}>
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src={% static "images/sample.png" %}>
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src={% static "images/sample.png" %}>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+{% load staticfiles %}
+
+<br>
+
+<div class="row">
+    <div class="col-sm-12" style="text-align: center;">
+        <a href="/home/"><img class="logo" src={% static "images/logo.png" %}></a>
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div class="login-card" style="height: 40rem;">
+            <div class="row">
+                <h3>Welcome Onboard..</h3>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input class="login-input" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="login-input" type="text" placeholder="City" value="Colombo" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input class="login-input" type="text" placeholder="Email" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="login-input" type="text" placeholder="Phone Number" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input class="login-input" type="password" placeholder="Password" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="login-input" type="password" placeholder="Confirm Password" required>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <button class="custom-button" style="background-color: rgb(178, 178, 250);">
+                        Create Seller
+                    </button>
+                </div>
+            </form>
+            <br>
+            <a style="text-align: center;" href="/seller/login">I have an account</a>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+{% endblock %}

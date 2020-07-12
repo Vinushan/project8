@@ -1,31 +1,35 @@
 html, body {
     height: 100%;
 }
+
+a { color: inherit; } 
   
 .full-height {
     height: 100%;
 }
 
+.half-height {
+    height: 100%;
+}
+
 .logo-area{
-    height: 8rem;
+    height: 5rem;
     /* border-bottom: 1px solid gray;
     border-right: 1px solid gray; */
 }
 
 .logo{
-    width:8rem;
+    text-align: center;
+    width: 18rem;
 }
 
 .top-bar{
     height: 5rem;
-    border-bottom: 1px solid gray;
 }
 
 .account-area{
     height: 5rem;
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-    background-color:rgb(103, 202, 90);
+    background-color: white;
 }
 
 .sidebar {
@@ -41,9 +45,48 @@ html, body {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 18px;
-  }
+}
 
 .flag {
     width: 8rem;
     padding: 4px;
 }  
+
+.dropdown {
+    width: 18%;
+    padding: 6px;
+    border: 1px white;
+    background-color: white;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.login-card {
+    height: 40rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding-top: 2rem;    
+}
+
+.login-input {
+    width: 80%;
+    text-align: left;
+    padding-top: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+.custom-button {
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+}

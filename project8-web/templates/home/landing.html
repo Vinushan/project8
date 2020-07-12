@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+{% load staticfiles %}
+
+<div class="row">
+    <div class="col-sm-2 logo-area">
+        <a href="/home/"><img class="logo" src={% static "images/logo.png" %}></a>
+    </div>
+    <div class="col-sm-8 top-bar">
+        <input class="search-bar" type="text" placeholder="Search..">
+        <select class="dropdown" name="location" id="location">
+            <option value="sl-cmb">Colombo</option>
+        </select>
+    </div>
+    <div class="col-sm-2 account-area">
+        <a href="/seller/login/"><img class="logo" src={% static "images/seller.png" %}></a>
+    </div>
+</div>
+<div class="col-sm-2 sidebar full-height">
+    <h4>Choosing from...</h4>
+</div>
+<div class="col-sm-10">
+    {% block home %}{% endblock %}
+</div>
+
+{% endblock %}

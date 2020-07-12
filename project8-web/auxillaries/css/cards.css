@@ -19,6 +19,7 @@
   
   /* Style the counter cards */
   .card {
+    height: 20rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
@@ -52,8 +53,7 @@
 
 .product-name {
   font-size: medium;
-  text-align: left;
-  padding-left: 2rem;
+  text-align: center;
 }
 
 .product-desc {
