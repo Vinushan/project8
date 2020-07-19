@@ -2,6 +2,11 @@
 webenv/**
 apienv/**
 
+# Python
+**/__pycache__/**
 
 # VS Code
 **/.vscode/**
+
+# Logs
+*.log
