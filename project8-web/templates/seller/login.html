@@ -22,7 +22,7 @@
         <div class="login-card" style="height: fit-content;">
             <div class="row">
                 <h3>Welcome Back..</h3>
-                <form id="seller-login" action="/seller/login/validate" method="POST">
+                <form id="seller-login" action="/seller/login/validate/" method="POST">
                     {% csrf_token %}
                     <input type="text" name="username" class="login-input" 
                     placeholder="Username" required>

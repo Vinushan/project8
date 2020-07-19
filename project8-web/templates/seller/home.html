@@ -1,24 +1,37 @@
-{% extends 'base.html' %}
+{% extends 'seller/header.html' %}
 
-{% block main %}
+{% block body %}
 
 {% load staticfiles %}
 
 <div class="row">
-    <div class="col-sm-2 logo-area">
-        <a href="/home/"><img class="logo" src={% static "images/logo.png" %}></a>
+    <div class="col-sm-3 sidebar-left">
+        <h4 style="text-align: center;">My Products | <a href="./add">Add Product</a></h4>
+        <div class="column" style="width: 100%;">
+            <div class="card" style="height: fit-content;">
+                <div class="row"><img class="product-image" src={% static "images/sample.png" %}></div>
+                <p style="padding-top: 1rem;">Product Name</p>
+            </div>
+            <br>
+            <div class="card" style="height: fit-content;">
+                <div class="row"><img class="product-image" src={% static "images/sample.png" %}></div>
+                <p style="padding-top: 1rem;">Product Name</p>
+            </div>
+            <br>
+            <div class="card" style="height: fit-content;">
+                <div class="row"><img class="product-image" src={% static "images/sample.png" %}></div>
+                <p style="padding-top: 1rem;">Product Name</p>
+            </div>
+            <br>
+            <div class="card" style="height: fit-content;">
+                <div class="row"><img class="product-image" src={% static "images/sample.png" %}></div>
+                <p style="padding-top: 1rem;">Product Name</p>
+            </div>                                    
+        </div>
     </div>
-    <div class="col-sm-6 top-bar">
-        <h4>Hi, Kanissma Selvaraj</h4>
-    </div> 
-    <div class="col-sm-2 top-bar">
-        <select class="dropdown" style="width: max-content;" name="location" id="location">
-            <option value="sl-cmb">Colombo</option>
-        </select>
-    </div>       
-    <div class="col-sm-2 account-area">
-        <a href="/seller/logout/">Logout</a>
-    </div>
+    <div class="col-sm-9">
+        
+    </div>   
 </div>
 
 {% endblock %}

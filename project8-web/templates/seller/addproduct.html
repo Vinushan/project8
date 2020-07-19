@@ -1,0 +1,93 @@
+{% extends 'seller/header.html' %}
+
+{% block body %}
+
+{% load staticfiles %}
+
+<script type="text/javascript" src={% static "js/product.js" %}></script>
+
+<br>
+
+<div class="row">
+    <form id="add-product" action="/product/add/" method="POST">
+        {% csrf_token %}
+        <div class="col-sm-9">
+            <div class="column" style="width: 100%;">
+                <div class="card" style="display: contents;">
+                    <h4 style="text-align: center;">Product Details</h4>
+                    <br>
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <input class="add-product-card" type="text" name="product_name" maxlength="50"
+                                value="{{ product_name }}" placeholder="Product Name" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input class="add-product-card" type="text" name="product_desc" maxlength="100"
+                                value="{{ product_desc }}" placeholder="Product Description">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input class="add-product-card" type="number" name="product_price"
+                                placeholder="Product Price (LKR)" required>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <textarea class="add-product-card" name="product_details" cols="30" rows="10"
+                                placeholder="Detailed Description about the product can be here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <br>
+                        <label for="product_image">Select image to upload</label>
+                        <br>
+                        <img src="#" id="product_image" alt="Product Photo" />
+                        <input type="file" onchange="readImageUrl(this)" name="product_image" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <br>
+            <h4 style="text-align: center;">Seller Details</h4>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="seller_name">Name </label>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="seller_name" value="{{ seller_name }}" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="location">Location </label>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="location" value="{{ location }}" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="phone">Phone </label>
+                </div>
+                <div class="col-sm-9">
+                    <input type="text" name="phone" value="{{ phone }}" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <a href="#">
+                    <input type="submit" class="custom-button" value="Add Product"/>
+                </a>
+                <a href="/seller/{{username}}/">
+                    <input type="button" class="custom-button" value="Cancel Product"/>
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}

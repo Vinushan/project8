@@ -33,9 +33,14 @@ a { color: inherit; }
     background-color: white;
 }
 
-.sidebar {
+.sidebar-left {
     padding-top: 2rem;
     border-right: 2px solid rgba(23, 24, 23, 0.267);
+}
+
+.sidebar-right {
+    padding-top: 2rem;
+    border-left: 2px solid rgba(23, 24, 23, 0.267);
 }
 
 .search-bar {
@@ -89,4 +94,10 @@ a { color: inherit; }
     display: inline-block;
     font-size: 12px;
     border-radius: 8px;
+}
+
+.add-product-card {
+    width: 100%;
+    text-align: left;
+    border-radius: 4px;
 }
