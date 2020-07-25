@@ -21,7 +21,7 @@ def get_logger():
 def __create_logger():
     global logger
     logging.basicConfig(filename=base_dir+"/logs/api.log",
-                        format='%(asctime)s %(message)s',
+                        format='%(levelname)s %(asctime)s %(message)s',
                         filemode='a+')
     logger = logging.getLogger()
     logger.setLevel(level = config["LOG"]["level"])

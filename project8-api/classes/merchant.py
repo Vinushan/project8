@@ -1,8 +1,8 @@
-class seller:
+class merchant:
     
     def __init__(self):
         pass
 
 
-    def create_seller(self):
+    def create_merchant(self):
         pass

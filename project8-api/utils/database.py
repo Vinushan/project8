@@ -15,8 +15,8 @@ pgsql_cursor = None
 
 
 def get_pgsql_cursor():
-    global pgsql_connection, pgsql_cursor
-    if pgsql_connection and pgsql_cursor:
+    global pgsql_cursor
+    if pgsql_cursor:
         return pgsql_cursor
     else:
         return __create_pgsql_connection()
